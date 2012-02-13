@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>1.0.0</version>
+    <authors>Greg Young</authors>
+    <owners>James Tryand</owners>
+    <licenseUrl>https://raw.github.com/gregoryyoung/grensesnitt/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/gregoryyoung/Simple.Testing</projectUrl>
+    <id>Simple.Testing</id>
+    <title />
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple Specification Framework.</description>
+    <summary>Simple Specification Framework.</summary>
+    <tags>test testing bdd tdd</tags>
+  </metadata>
+  <files>
+    <file src="ReleaseFiles\lib\PowerAssert.dll" target="lib\PowerAssert.dll" />
+    <file src="ReleaseFiles\lib\PowerAssert.pdb" target="lib\PowerAssert.pdb" />
+    <file src="ReleaseFiles\lib\Simple.Testing.Framework.dll" target="lib\Simple.Testing.Framework.dll" />
+    <file src="ReleaseFiles\lib\Simple.Testing.Framework.pdb" target="lib\Simple.Testing.Framework.pdb" />
+    <file src="ReleaseFiles\tools\PowerAssert.dll" target="tools\PowerAssert.dll" />
+    <file src="ReleaseFiles\tools\PowerAssert.pdb" target="tools\PowerAssert.pdb" />
+    <file src="ReleaseFiles\tools\Simple.Testing.Framework.dll" target="tools\Simple.Testing.Framework.dll" />
+    <file src="ReleaseFiles\tools\Simple.Testing.Framework.pdb" target="tools\Simple.Testing.Framework.pdb" />
+    <file src="ReleaseFiles\tools\Simple.Testing.Runner.exe" target="tools\Simple.Testing.Runner.exe" />
+    <file src="ReleaseFiles\tools\Simple.Testing.Runner.pdb" target="tools\Simple.Testing.Runner.pdb" />
+  </files>
+</package>

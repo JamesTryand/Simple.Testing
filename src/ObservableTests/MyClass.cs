@@ -18,7 +18,7 @@ namespace ObservableTests
 	{
         public PriceChanged (decimal priorPrice, decimal newPrice)
         {
-           se PriorPrice = priorPrice;
+            PriorPrice = priorPrice;
             NewPrice = newPrice;
         }
         public readonly decimal PriorPrice;

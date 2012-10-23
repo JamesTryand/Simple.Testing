@@ -1,4 +1,4 @@
-﻿using Simple.Testing.Framework;
+﻿using Simple.Testing.ClientFramework;
 
 namespace Simple.Testing.Example
 {
@@ -14,17 +14,20 @@ namespace Simple.Testing.Example
      */
     public class QuerySepcification
     {
-        public Specification it_returns_something_interesting = new QuerySpecification<QueryExample, Product>
+        public Specification it_returns_something_interesting()
         {
-            On = () => new QueryExample(),
-            When = obj => obj.GetProduct(14),
-            Expect =
-                {
-                    product => product.Id == 14,
-                    product => product.Code == "TEST",
-                    product => product.Description == "test description"
-                },
-        };
+            return new QuerySpecification<QueryExample, Product>
+                       {
+                           On = () => new QueryExample(),
+                           When = obj => obj.GetProduct(14),
+                           Expect =
+                               {
+                                   product => product.Id == 14,
+                                   product => product.Code == "TEST",
+                                   product => product.Description == "test description"
+                               },
+                       };
+        }
     }
 
     public class QueryExample

@@ -18,7 +18,7 @@ namespace Simple.Testing.Framework
 
         public object GetOnResult()
         {
-            return On.DynamicInvoke();
+            return (On ?? new Action(() => { })).DynamicInvoke();
         }
 
         public string Name
